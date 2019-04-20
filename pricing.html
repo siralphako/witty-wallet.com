@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<title>Pricing</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/css/witty.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="assets/fontawesome-free/css/all.min.css" type="text/css">
+<link rel="shortcut icon" href="resources/witty-icons/favicon-32x32.png" type="image/x-icon">
+
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Raleway", sans-serif
+  }
+
+  body,
+  html {
+    height: 100%;
+    line-height: 1.8;
+  }
+
+  .bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(50, 205, 50, 0.5);
+    /* background-image: url("resources/2x3.jpg"); */
+    min-height: 100%;
+  }
+
+  .bgimg-1::after {
+    content: "";
+    background: url("resources/2x3.jpg");
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed !important;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(50, 205, 50, 0.5);
+    /* background-image: url("resources/2x3.jpg"); */
+    min-height: 100%;
+  }
+
+  .witty-bar .witty-button {
+    padding: 16px;
+  }
+
+  .img-gradient {
+    position: relative;
+    display: inline-block;
+  }
+</style>
+
+<body>
+
+  <!--NAVBAR-->
+  <div class="witty-top">
+    <div class="witty-bar witty-white witty-card" id="myNavbar">
+      <a href="index.html" class="witty-bar-item witty-wide">
+        <img src="resources/icon.png" width="80px;">
+      </a>
+      <!-- Right-sided navbar links -->
+      <div class="witty-right witty-hide-small">
+        <a href="index.html" class="witty-bar-item witty-button">
+          <i class="fas fa-home"></i> Home
+        </a>
+        <a href="features.html" class="witty-bar-item witty-button">
+          <i class="fas fa-box-open"></i> Features
+        </a>
+        <a href="team.html" class="witty-bar-item witty-button">
+          <i class="fas fa-users"></i> Team
+        </a>
+        <a href="about.html" class="witty-bar-item witty-button">
+          <i class="fas fa-th"></i> About
+        </a>
+        <a href="pricing.html" class="witty-bar-item witty-button witty-active">
+          <i class="fas fa-money-bill-wave"></i> Pricing
+        </a>
+        <a href="contact.html" class="witty-bar-item witty-button">
+          <i class="fas fa-envelope"></i> Contact
+        </a>
+        <a href="downloads.html" class="witty-bar-item witty-button">
+          <i class="fas fa-download"></i> Download
+        </a>
+      </div>
+
+      <a href="javascript:void(0)" class="witty-bar-item witty-button witty-right witty-hide-large witty-hide-medium" onclick="witty_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+  <!--/NAVBAR-->
+
+  <nav class="witty-sidebar witty-bar-block witty-black witty-card witty-animate-left witty-hide-medium witty-hide-large" style="display:none"
+    id="mySidebar">
+    <a href="javascript:void(0)" onclick="witty_close()" class="witty-bar-item witty-button witty-large witty-padding-16">Close ×</a>
+    <a href="about.html" onclick="witty_close()" class="witty-bar-item witty-button">ABOUT</a>
+    <a href="team.html" onclick="witty_close()" class="witty-bar-item witty-button">TEAM</a>
+    <a href="features.html" onclick="witty_close()" class="witty-bar-item witty-button">FEATURES</a>
+    <a href="pricing.html" onclick="witty_close()" class="witty-bar-item witty-button">PRICING</a>
+    <a href="contact.html" onclick="witty_close()" class="witty-bar-item witty-button">CONTACT</a>
+  </nav>
+
+  <!-- Pricing Section -->
+  <div class="witty-container witty-center witty-dark-grey" style="padding:80px 16px" id="pricing">
+    <h3>PRICING</h3>
+    <p class="witty-large">Choose a pricing plan that fits your needs.</p>
+    <div class="witty-row-padding" style="margin-top:64px;">
+
+      <div class="witty-third witty-section">
+        <ul class="witty-ul witty-white witty-hover-shadow">
+          <li class="witty-black witty-xlarge witty-padding-32">Free</li>
+          <li class="witty-padding-16">
+            <b>Unlimited</b> Personal Mode</li>
+          <li class="witty-padding-16">
+            <h2 class="witty-wide">&#8369; 0</h2>
+            <span class="witty-opacity">per year</span>
+          </li>
+          <li class="witty-light-grey witty-padding-24">
+            <button class="witty-button witty-black witty-padding-large">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+
+      <!--Pricing Section-->
+      <div class="witty-third witty-section mx-auto">
+        <ul class="witty-ul witty-white witty-hover-shadow">
+          <li class="witty-green witty-xlarge witty-padding-32">Premium</li>
+          <li class="witty-padding-16">
+            <b>Unlimited </b>Personal/Business Mode</li>
+          <li class="witty-padding-16">
+            <b>Unlimited</b> Access to Data Analytics Tools for your Business</li>
+          <li class="witty-padding-16">
+            <b>Register up to 5</b> Business Names</li>
+          <li class="witty-padding-16">
+            <b>Endless</b> Support</li>
+          <li class="witty-padding-16">
+            <h2 class="witty-wide">&#8369; 300</h2>
+            <span class="witty-opacity">per year</span>
+          </li>
+          <li class="witty-light-grey witty-padding-24">
+            <button class="witty-button witty-black witty-padding-large">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="witty-center witty-black witty-padding-64">
+    <a href="#home" class="witty-button witty-light-grey">
+      <i class="fa fa-arrow-up witty-margin-right"></i>To the top</a>
+    <div class="witty-xlarge witty-section">
+      <i class="fab fa-facebook-f witty-hover-opacity"></i>
+      <i class="fab fa-instagram witty-hover-opacity"></i>
+      <i class="fab fa-snapchat witty-hover-opacity"></i>
+      <i class="fab fa-pinterest-p witty-hover-opacity"></i>
+      <i class="fab fa-twitter witty-hover-opacity"></i>
+      <i class="fab fa-linkedin witty-hover-opacity"></i>
+    </div>
+    &copy;
+    <a href="#" style="color:#fff;">Witty Solutions</a> 2019
+  </footer>
+
+  <script>
+    var mySidebar = document.getElementById("mySidebar");
+
+    function witty_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+      } else {
+        mySidebar.style.display = 'block';
+      }
+    }
+
+    function witty_close() {
+      mySidebar.style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>

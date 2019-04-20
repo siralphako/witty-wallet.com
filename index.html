@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/css/witty.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="assets/fontawesome-free/css/all.min.css" type="text/css">
+<link rel="shortcut icon" href="resources/witty-icons/favicon-32x32.png" type="image/x-icon">
+
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Raleway", sans-serif
+  }
+
+  body,
+  html {
+    height: 100%;
+    line-height: 1.8;
+  }
+
+  .bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(50, 205, 50, 0.5);
+    /* background-image: url("resources/2x3.jpg"); */
+    min-height: 100%;
+  }
+
+  .bgimg-1::after {
+    content: "";
+    background: url("resources/2x3.jpg");
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed !important;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(50, 205, 50, 0.5);
+    /* background-image: url("resources/2x3.jpg"); */
+    min-height: 100%;
+  }
+
+  .witty-bar .witty-button {
+    padding: 16px;
+  }
+
+  .img-gradient {
+    position: relative;
+    display: inline-block;
+  }
+</style>
+
+<body>
+
+  <!--NAVBAR-->
+  <div class="witty-top">
+    <div class="witty-bar witty-white witty-card" id="myNavbar">
+      <a href="index.html" class="witty-bar-item witty-wide">
+        <img src="resources/icon.png" width="80px;">
+      </a>
+      <!-- Right-sided navbar links -->
+      <div class="witty-right witty-hide-small">
+        <a href="index.html" class="witty-bar-item witty-button witty-active">
+          <i class="fas fa-home"></i> Home
+        </a>
+        <a href="features.html" class="witty-bar-item witty-button">
+          <i class="fas fa-box-open"></i> Features
+        </a>
+        <a href="team.html" class="witty-bar-item witty-button">
+          <i class="fas fa-users"></i> Team
+        </a>
+        <a href="about.html" class="witty-bar-item witty-button">
+          <i class="fas fa-th"></i> About
+        </a>
+        <a href="pricing.html" class="witty-bar-item witty-button">
+          <i class="fas fa-money-bill-wave"></i> Pricing
+        </a>
+        <a href="contact.html" class="witty-bar-item witty-button">
+          <i class="fas fa-envelope"></i> Contact
+        </a>
+        <a href="downloads.html" class="witty-bar-item witty-button">
+          <i class="fas fa-download"></i> Download
+        </a>
+      </div>
+
+      <a href="javascript:void(0)" class="witty-bar-item witty-button witty-right witty-hide-large witty-hide-medium" onclick="witty_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+  <!--/NAVBAR-->
+
+  <nav class="witty-sidebar witty-bar-block witty-black witty-card witty-animate-left witty-hide-medium witty-hide-large" style="display:none"
+    id="mySidebar">
+    <a href="javascript:void(0)" onclick="witty_close()" class="witty-bar-item witty-button witty-large witty-padding-16">Close ×</a>
+    <a href="about.html" onclick="witty_close()" class="witty-bar-item witty-button">ABOUT</a>
+    <a href="team.html" onclick="witty_close()" class="witty-bar-item witty-button">TEAM</a>
+    <a href="features.html" onclick="witty_close()" class="witty-bar-item witty-button">FEATURES</a>
+    <a href="pricing.html" onclick="witty_close()" class="witty-bar-item witty-button">PRICING</a>
+    <a href="contact.html" onclick="witty_close()" class="witty-bar-item witty-button">CONTACT</a>
+  </nav>
+
+  <header class="bgimg-1 witty-display-container witty-grayscale-min">
+    <div class="witty-display-left witty-text-white" style="padding:48px">
+      <p>
+        <a href="android-download.html" class="witty-button witty-black witty-padding-large witty-large witty-margin-top witty-opacity witty-hover-opacity-off">
+          <i class="fab fa-android"></i> Download</a>
+        <a href="ios-download.html" class="witty-button witty-black witty-padding-large witty-large witty-margin-top witty-opacity witty-hover-opacity-off">
+          <i class="fab fa-apple"></i> Download</a>
+        <a href="windows-download.html" class="witty-button witty-black witty-padding-large witty-large witty-margin-top witty-opacity witty-hover-opacity-off">
+          <i class="fab fa-windows"></i> Download</a>
+      </p>
+    </div>
+    <div class="witty-display-bottomleft witty-text-grey witty-large" style="padding:24px 48px">
+      <i class="fa fa-facebook-official witty-hover-opacity"></i>
+      <i class="fa fa-instagram witty-hover-opacity"></i>
+      <i class="fa fa-snapchat witty-hover-opacity"></i>
+      <i class="fa fa-pinterest-p witty-hover-opacity"></i>
+      <i class="fa fa-twitter witty-hover-opacity"></i>
+      <i class="fa fa-linkedin witty-hover-opacity"></i>
+    </div>
+  </header>
+
+  <!--Promo Section - Stats-->
+  <div class="witty-container witty-row witty-center witty-green witty-padding-24">
+    <div class="witty-quarter">
+      <span class="witty-xxlarge">14+</span>
+      <br>Partners
+    </div>
+    <div class="witty-quarter">
+      <span class="witty-xxlarge">55+</span>
+      <br>Projects Done
+    </div>
+    <div class="witty-quarter">
+      <span class="witty-xxlarge">2000+</span>
+      <br>Happy Clients
+    </div>
+    <div class="witty-quarter">
+      <span class="witty-xxlarge">150+</span>
+      <br>Meetings
+    </div>
+    <div class="witty-quarter">
+      <span class="witty-xxlarge">3000+</span>
+      <br>Downloads
+    </div>
+  </div>
+
+  <!-- Promo Section - "Machine Learning" -->
+  <div class="witty-container witty-light-grey" style="padding:30px 16px">
+    <div class="witty-row-padding">
+      <div class="witty-col m6">
+        <h3>Machine Learning on Witty Wallet.</h3>
+        <p>Witty Wallet uses Multi-variate Linear Regression Algorithm to
+          <br>create your monthly budget.</p>
+        <p>Not sure what Linear Regression is?</p>
+        <a href="#work" class="witty-button witty-black">
+          <i class="fa fa-th"> </i> View how it works</a>
+        </p>
+      </div>
+      <div class="witty-col m6">
+        <img class="witty-image witty-round-large" src="resources/lr.gif" alt="Linear Regression" width="700" height="200">
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="witty-modal witty-black" onclick="this.style.display='none'">
+    <span class="witty-button witty-xxlarge witty-black witty-padding-large witty-display-topright" title="Close Modal Image">×</span>
+    <div class="witty-modal-content witty-animate-zoom witty-center witty-transparent witty-padding-64">
+      <img id="img01" class="witty-image">
+      <p id="caption" class="witty-opacity witty-large"></p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="witty-center witty-black witty-padding-64">
+    <a href="#home" class="witty-button witty-light-grey">
+      <i class="fa fa-arrow-up witty-margin-right"></i>To the top</a>
+    <div class="witty-xlarge witty-section">
+      <i class="fab fa-facebook-f witty-hover-opacity"></i>
+      <i class="fab fa-instagram witty-hover-opacity"></i>
+      <i class="fab fa-snapchat witty-hover-opacity"></i>
+      <i class="fab fa-pinterest-p witty-hover-opacity"></i>
+      <i class="fab fa-twitter witty-hover-opacity"></i>
+      <i class="fab fa-linkedin witty-hover-opacity"></i>
+    </div>
+    &copy;
+    <a href="#" style="color: #fff;">Witty Solutions</a> 2019
+  </footer>
+
+  <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+
+    function witty_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+      } else {
+        mySidebar.style.display = 'block';
+      }
+    }
+
+    // Close the sidebar with the close button
+    function witty_close() {
+      mySidebar.style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>

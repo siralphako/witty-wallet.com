@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<title>About</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/css/witty.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="assets/fontawesome-free/css/all.min.css" type="text/css">
+<link rel="shortcut icon" href="resources/witty-icons/favicon-32x32.png" type="image/x-icon">
+
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Raleway", sans-serif
+  }
+
+  body,
+  html {
+    height: 100%;
+    line-height: 1.8;
+  }
+
+  .bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(50, 205, 50, 0.5);
+    /* background-image: url("resources/2x3.jpg"); */
+    min-height: 100%;
+  }
+
+  .bgimg-1::after {
+    content: "";
+    background: url("resources/2x3.jpg");
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed !important;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(50, 205, 50, 0.5);
+    /* background-image: url("resources/2x3.jpg"); */
+    min-height: 100%;
+  }
+
+  .witty-bar .witty-button {
+    padding: 16px;
+  }
+
+  .img-gradient {
+    position: relative;
+    display: inline-block;
+  }
+</style>
+
+<body>
+
+  <!--NAVBAR-->
+  <div class="witty-top">
+    <div class="witty-bar witty-white witty-card" id="myNavbar">
+      <a href="index.html" class="witty-bar-item witty-wide">
+        <img src="resources/icon.png" width="80px;">
+      </a>
+      <!-- Right-sided navbar links -->
+      <div class="witty-right witty-hide-small">
+        <a href="index.html" class="witty-bar-item witty-button">
+          <i class="fas fa-home"></i> Home
+        </a>
+        <a href="features.html" class="witty-bar-item witty-button">
+          <i class="fas fa-box-open"></i> Features
+        </a>
+        <a href="team.html" class="witty-bar-item witty-button">
+          <i class="fas fa-users"></i> Team
+        </a>
+        <a href="about.html" class="witty-bar-item witty-button witty-active">
+          <i class="fas fa-th"></i> About
+        </a>
+        <a href="pricing.html" class="witty-bar-item witty-button">
+          <i class="fas fa-money-bill-wave"></i> Pricing
+        </a>
+        <a href="downloads.html" class="witty-bar-item witty-button">
+          <i class="fas fa-download"></i> Download
+        </a>
+      </div>
+
+      <a href="javascript:void(0)" class="witty-bar-item witty-button witty-right witty-hide-large witty-hide-medium" onclick="witty_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+  <!--/NAVBAR-->
+
+
+  <nav class="witty-sidebar witty-bar-block witty-black witty-card witty-animate-left witty-hide-medium witty-hide-large" style="display:none"
+    id="mySidebar">
+    <a href="javascript:void(0)" onclick="witty_close()" class="witty-bar-item witty-button witty-large witty-padding-16">Close ×</a>
+    <a href="about.html" onclick="witty_close()" class="witty-bar-item witty-button">ABOUT</a>
+    <a href="team.html" onclick="witty_close()" class="witty-bar-item witty-button">TEAM</a>
+    <a href="features.html" onclick="witty_close()" class="witty-bar-item witty-button">FEATURES</a>
+    <a href="pricing.html" onclick="witty_close()" class="witty-bar-item witty-button">PRICING</a>
+    <a href="contact.html" onclick="witty_close()" class="witty-bar-item witty-button">CONTACT</a>
+  </nav>
+
+  <!--About Section-->
+  <div class="witty-container" style="padding:80px 16px">
+    <h3 class="witty-center">ABOUT US</h3>
+
+    <table class="witty-table">
+      <tr>
+        <td>
+          <strong>Mission</strong>
+        </td>
+        <td>Witty Solutions is a startup IT solutions business specializing in developing apps. Our mission is to develop different
+          solutions to be integrated within the community to help them with everyday menial activities in a fun and convenient
+          way.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>Vision</strong>
+        </td>
+        <td>Our vision is to become the leading IT solutions company that delivers excellence and is trusted in the whole country.</td>
+      </tr>
+    </table>
+
+    <p class="witty-center witty-large">.</p>
+
+    <div class="witty-row">
+      <video width="60%" height="auto" controls style="margin-left:20%;">
+        <source src="resources/wittywallet.mp4" type="video/mp4"> Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="witty-row-padding" style="margin-top:64px">
+    </div>
+
+    <div class="witty-row-padding witty-section">
+    </div>
+
+    <div id="modal01" class="witty-modal witty-black" onclick="this.style.display='none'">
+      <span class="witty-button witty-xxlarge witty-black witty-padding-large witty-display-topright" title="Close Modal Image">×</span>
+      <div class="witty-modal-content witty-animate-zoom witty-center witty-transparent witty-padding-64">
+        <img id="img01" class="witty-image">
+        <p id="caption" class="witty-opacity witty-large"></p>
+      </div>
+    </div>
+
+    <!--Promo - What we do -->
+    <div class="witty-container witty-light-grey witty-padding-64">
+      <div class="witty-row-padding">
+        <div class="witty-col m6">
+          <h3>What we do at Witty Solutions.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            <br> tempor incididunt ut labore et dolore.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            <br> tempor incididunt ut labore et dolore.</p>
+        </div>
+        <div class="witty-col m6">
+          <p class="witty-wide">
+            <i class="fas fa-mobile-alt witty-margin-right"></i>Mobile Development</p>
+          <div class="witty-grey">
+            <div class="witty-container witty-dark-grey witty-center" style="width:90%">90%</div>
+          </div>
+          <p class="witty-wide">
+            <i class="fas fa-desktop witty-margin-right"></i>Software Development</p>
+          <div class="witty-grey">
+            <div class="witty-container witty-dark-grey witty-center" style="width:90%">90%</div>
+          </div>
+          <p class="witty-wide">
+            <i class="fa fa-desktop witty-margin-right"></i>Web Design/Development</p>
+          <div class="witty-grey">
+            <div class="witty-container witty-dark-grey witty-center" style="width:85%">85%</div>
+          </div>
+          <p class="witty-wide">
+            <i class="fa fa-camera-retro witty-margin-right"></i>Multimedia Production</p>
+          <div class="witty-grey">
+            <div class="witty-container witty-dark-grey witty-center" style="width:75%">75%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="witty-center witty-black witty-padding-64">
+      <a href="#myNavbar" class="witty-button witty-light-grey">
+        <i class="fas fa-arrow-up witty-margin-right"></i>Back to Top</a>
+      <div class="witty-xlarge witty-section">
+        <i class="fab fa-facebook-f witty-hover-opacity"></i>
+        <i class="fab fa-instagram witty-hover-opacity"></i>
+        <i class="fab fa-snapchat witty-hover-opacity"></i>
+        <i class="fab fa-pinterest-p witty-hover-opacity"></i>
+        <i class="fab fa-twitter witty-hover-opacity"></i>
+        <i class="fab fa-linkedin witty-hover-opacity"></i>
+      </div>
+      &copy;
+      <a href="#" style="color:#fff;">Witty Solutions</a> 2019
+    </footer>
+
+    <script>
+
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+
+      var mySidebar = document.getElementById("mySidebar");
+
+      function witty_open() {
+        if (mySidebar.style.display === 'block') {
+          mySidebar.style.display = 'none';
+        } else {
+          mySidebar.style.display = 'block';
+        }
+      }
+
+      function witty_close() {
+        mySidebar.style.display = "none";
+      }
+
+      $(function () {
+        $(document).scroll(function () {
+          var $nav = $(".witty-top");
+          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
+
+</body>
+
+</html>
